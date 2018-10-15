@@ -1,0 +1,1673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetRegistrationData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRegistrationDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRegistrationDataResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLicenseData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLicenseDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLicenseDataResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateLicenseStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="licenseno" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="slno" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateLicenseStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateLicenseStatusResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRegistrationDataTOW">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRegistrationDataTOWResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRegistrationDataTOWResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateRegistrationStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="regno" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateRegistrationStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateRegistrationStatusResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLicenseDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="licenseno" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="dob" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLicenseDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLicenseDetailsResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVCROffenceData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVCROffenceDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVCROffenceDataResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVCROffencePaymentData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVCROffencePaymentDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVCROffencePaymentDataResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateVCRStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="regno" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="vcrno" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateVCRStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateVCRStatusResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateVCRPaymentStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="regno" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="vcrno" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateVCRPaymentStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateVCRPaymentStatusResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVehicleTaxPermitFitnessValiditis">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVehicleTaxPermitFitnessValiditisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVehicleTaxPermitFitnessValiditisResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateFlagTaxPermitFCValidities">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="regnno" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateFlagTaxPermitFCValiditiesResponse">
+        <s:complexType/>
+      </s:element>
+      <s:element name="InsertAlternateAddress">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Regno" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="FatherName" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Dob" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="AltAddress1" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="AltAddress2" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="AltAddress3" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="AltCity" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="AltState" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="AltDistrict" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="AltMandal" type="s:int"/>
+            <s:element minOccurs="0" maxOccurs="1" name="AltPin_Code" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="AltPhoneNo" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="AltEMail" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="AltCountry" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="CrtdUsr" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertAlternateAddressResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertAlternateAddressResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRegAlternateAddressData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRegAlternateAddressDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRegAlternateAddressDataResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateFlagRegAlternateAddress">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="regnno" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateFlagRegAlternateAddressResponse">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetVehicleLatestData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="regnno" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVehicleLatestDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVehicleLatestDataResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVehicleOldOwnerDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="regnno" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVehicleOldOwnerDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVehicleOldOwnerDetailsResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVehicleOldFinancerDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="regnno" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVehicleOldFinancerDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVehicleOldFinancerDetailsResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTaxParticlarsForvehicle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="regnno" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTaxParticlarsForvehicleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTaxParticlarsForvehicleResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPanNumberBasedVehicles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PanNo" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPanNumberBasedVehiclesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPanNumberBasedVehiclesResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAAdharNumberBasedVehiclesandLicenses">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AadharNo" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAAdharNumberBasedVehiclesandLicensesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAAdharNumberBasedVehiclesandLicensesResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLicenseLatestData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="licenseno" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLicenseLatestDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLicenseLatestDataResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVehicleDataOnRegnnoChassisnoEngineNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="regnno" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="chassisno" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="engineno" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVehicleDataOnRegnnoChassisnoEngineNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVehicleDataOnRegnnoChassisnoEngineNoResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLLRData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LLRNumber" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLLRDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLLRDataResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRCAndLicenseDtlsForMobileEwalletAppDatewise">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Date" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRCAndLicenseDtlsForMobileEwalletAppDatewiseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRCAndLicenseDtlsForMobileEwalletAppDatewiseResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertMwalletPoliceViolations">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChallanNo" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="RegnNo" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ViolationDate" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Violationtime" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="StateCode" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="UnitCode" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="PoliceStationJuris" type="s:int"/>
+            <s:element minOccurs="0" maxOccurs="1" name="PlaceOfViolation" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="TypeOfViolations" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="ImposedFineAmount" type="s:decimal"/>
+            <s:element minOccurs="1" maxOccurs="1" name="Usercharges" type="s:decimal"/>
+            <s:element minOccurs="1" maxOccurs="1" name="TotalAmount" type="s:decimal"/>
+            <s:element minOccurs="0" maxOccurs="1" name="DriversDlNo" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="DriversName" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="DriverAddress" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="DriverCity" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentSatus" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="DateOfPay" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertMwalletPoliceViolationsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertMwalletPoliceViolationsResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateMwalletpaymentdtls">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="challanno" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="DateOfPay" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="TransactionNo" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateMwalletpaymentdtlsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateMwalletpaymentdtlsResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertLicenseSuspensionDetailsPolice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseNo" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="CurrentOffice" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="DOB" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Offence" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="SuspensionDate" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="CompoundAmount" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertLicenseSuspensionDetailsPoliceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertLicenseSuspensionDetailsPoliceResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPoliceChallanForpointSystem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Challanno" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="DlNumber" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Dob" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="VoilationType" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="VoilationPlace" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="VoilationDate" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="FirNo" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Firdate" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="CourtcaseNo" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="CourtcaseDate" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Mobileno" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="RegnNo" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ImpoundFlg" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ImpoundDate" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ImpoundBy" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ImpoundPeriod" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPoliceChallanForpointSystemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPoliceChallanForpointSystemResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateChallanStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Challanno" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ChallanStatus" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="officerID" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="officerName" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateDate" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="remarks" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateChallanStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateChallanStatusResult" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChallanNo" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="DrivingLicense" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="DOB" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="officerID" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="officerName" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateDate" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateDLResult" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPoliceChallansonLicense">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseNo" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="DOB" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPoliceChallansonLicenseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPoliceChallansonLicenseResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VoilationUpdation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChallanNo" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Voilations" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="officerID" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="officerName" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateDate" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VoilationUpdationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VoilationUpdationResult" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLicenseLatestDataDOB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="licenseno" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="DOB" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLicenseLatestDataDOBResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLicenseLatestDataDOBResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertPoliceChallanForPointSystemSeqNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DlNumber" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Dob" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="VoilationType" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="VoilationPlace" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="VoilationDate" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="FirNo" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Firdate" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="CourtcaseNo" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="CourtcaseDate" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Mobileno" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="RegnNo" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ImpoundFlg" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ImpoundDate" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ImpoundBy" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ImpoundPeriod" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ChallanSeqNo" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="TypeofChallan" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertPoliceChallanForPointSystemSeqNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertPoliceChallanForPointSystemSeqNoResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateChallanNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Challanno" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="ChallanSeqNo" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateChallanNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateChallanNumberResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertLicensesForSuspensionFromPoliceDept">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DlNumber" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Dob" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="mobileNo" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="aadhaarNo" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="actionOnDL" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="noOfDays" type="s:int"/>
+            <s:element minOccurs="0" maxOccurs="1" name="actionFrom" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="actionTo" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="challanNo" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertLicensesForSuspensionFromPoliceDeptResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertLicensesForSuspensionFromPoliceDeptResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetRegistrationDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRegistrationData"/>
+  </wsdl:message>
+  <wsdl:message name="GetRegistrationDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRegistrationDataResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetLicenseDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLicenseData"/>
+  </wsdl:message>
+  <wsdl:message name="GetLicenseDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLicenseDataResponse"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateLicenseStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateLicenseStatus"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateLicenseStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateLicenseStatusResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetRegistrationDataTOWSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRegistrationDataTOW"/>
+  </wsdl:message>
+  <wsdl:message name="GetRegistrationDataTOWSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRegistrationDataTOWResponse"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateRegistrationStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateRegistrationStatus"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateRegistrationStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateRegistrationStatusResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetLicenseDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLicenseDetails"/>
+  </wsdl:message>
+  <wsdl:message name="GetLicenseDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLicenseDetailsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetVCROffenceDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVCROffenceData"/>
+  </wsdl:message>
+  <wsdl:message name="GetVCROffenceDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVCROffenceDataResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetVCROffencePaymentDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVCROffencePaymentData"/>
+  </wsdl:message>
+  <wsdl:message name="GetVCROffencePaymentDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVCROffencePaymentDataResponse"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateVCRStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateVCRStatus"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateVCRStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateVCRStatusResponse"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateVCRPaymentStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateVCRPaymentStatus"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateVCRPaymentStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateVCRPaymentStatusResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetVehicleTaxPermitFitnessValiditisSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVehicleTaxPermitFitnessValiditis"/>
+  </wsdl:message>
+  <wsdl:message name="GetVehicleTaxPermitFitnessValiditisSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVehicleTaxPermitFitnessValiditisResponse"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateFlagTaxPermitFCValiditiesSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateFlagTaxPermitFCValidities"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateFlagTaxPermitFCValiditiesSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateFlagTaxPermitFCValiditiesResponse"/>
+  </wsdl:message>
+  <wsdl:message name="InsertAlternateAddressSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertAlternateAddress"/>
+  </wsdl:message>
+  <wsdl:message name="InsertAlternateAddressSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertAlternateAddressResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetRegAlternateAddressDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRegAlternateAddressData"/>
+  </wsdl:message>
+  <wsdl:message name="GetRegAlternateAddressDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRegAlternateAddressDataResponse"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateFlagRegAlternateAddressSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateFlagRegAlternateAddress"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateFlagRegAlternateAddressSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateFlagRegAlternateAddressResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetVehicleLatestDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVehicleLatestData"/>
+  </wsdl:message>
+  <wsdl:message name="GetVehicleLatestDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVehicleLatestDataResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetVehicleOldOwnerDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVehicleOldOwnerDetails"/>
+  </wsdl:message>
+  <wsdl:message name="GetVehicleOldOwnerDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVehicleOldOwnerDetailsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetVehicleOldFinancerDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVehicleOldFinancerDetails"/>
+  </wsdl:message>
+  <wsdl:message name="GetVehicleOldFinancerDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVehicleOldFinancerDetailsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetTaxParticlarsForvehicleSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTaxParticlarsForvehicle"/>
+  </wsdl:message>
+  <wsdl:message name="GetTaxParticlarsForvehicleSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTaxParticlarsForvehicleResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetPanNumberBasedVehiclesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPanNumberBasedVehicles"/>
+  </wsdl:message>
+  <wsdl:message name="GetPanNumberBasedVehiclesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPanNumberBasedVehiclesResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetAAdharNumberBasedVehiclesandLicensesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAAdharNumberBasedVehiclesandLicenses"/>
+  </wsdl:message>
+  <wsdl:message name="GetAAdharNumberBasedVehiclesandLicensesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAAdharNumberBasedVehiclesandLicensesResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetLicenseLatestDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLicenseLatestData"/>
+  </wsdl:message>
+  <wsdl:message name="GetLicenseLatestDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLicenseLatestDataResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetVehicleDataOnRegnnoChassisnoEngineNoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVehicleDataOnRegnnoChassisnoEngineNo"/>
+  </wsdl:message>
+  <wsdl:message name="GetVehicleDataOnRegnnoChassisnoEngineNoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVehicleDataOnRegnnoChassisnoEngineNoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetLLRDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLLRData"/>
+  </wsdl:message>
+  <wsdl:message name="GetLLRDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLLRDataResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetRCAndLicenseDtlsForMobileEwalletAppDatewiseSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRCAndLicenseDtlsForMobileEwalletAppDatewise"/>
+  </wsdl:message>
+  <wsdl:message name="GetRCAndLicenseDtlsForMobileEwalletAppDatewiseSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRCAndLicenseDtlsForMobileEwalletAppDatewiseResponse"/>
+  </wsdl:message>
+  <wsdl:message name="InsertMwalletPoliceViolationsSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertMwalletPoliceViolations"/>
+  </wsdl:message>
+  <wsdl:message name="InsertMwalletPoliceViolationsSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertMwalletPoliceViolationsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateMwalletpaymentdtlsSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateMwalletpaymentdtls"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateMwalletpaymentdtlsSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateMwalletpaymentdtlsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="InsertLicenseSuspensionDetailsPoliceSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertLicenseSuspensionDetailsPolice"/>
+  </wsdl:message>
+  <wsdl:message name="InsertLicenseSuspensionDetailsPoliceSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertLicenseSuspensionDetailsPoliceResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetPoliceChallanForpointSystemSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPoliceChallanForpointSystem"/>
+  </wsdl:message>
+  <wsdl:message name="GetPoliceChallanForpointSystemSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPoliceChallanForpointSystemResponse"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateChallanStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateChallanStatus"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateChallanStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateChallanStatusResponse"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateDLSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateDL"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateDLSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateDLResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetPoliceChallansonLicenseSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPoliceChallansonLicense"/>
+  </wsdl:message>
+  <wsdl:message name="GetPoliceChallansonLicenseSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPoliceChallansonLicenseResponse"/>
+  </wsdl:message>
+  <wsdl:message name="VoilationUpdationSoapIn">
+    <wsdl:part name="parameters" element="tns:VoilationUpdation"/>
+  </wsdl:message>
+  <wsdl:message name="VoilationUpdationSoapOut">
+    <wsdl:part name="parameters" element="tns:VoilationUpdationResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetLicenseLatestDataDOBSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLicenseLatestDataDOB"/>
+  </wsdl:message>
+  <wsdl:message name="GetLicenseLatestDataDOBSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLicenseLatestDataDOBResponse"/>
+  </wsdl:message>
+  <wsdl:message name="InsertPoliceChallanForPointSystemSeqNoSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertPoliceChallanForPointSystemSeqNo"/>
+  </wsdl:message>
+  <wsdl:message name="InsertPoliceChallanForPointSystemSeqNoSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertPoliceChallanForPointSystemSeqNoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateChallanNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateChallanNumber"/>
+  </wsdl:message>
+  <wsdl:message name="UpdateChallanNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateChallanNumberResponse"/>
+  </wsdl:message>
+  <wsdl:message name="InsertLicensesForSuspensionFromPoliceDeptSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertLicensesForSuspensionFromPoliceDept"/>
+  </wsdl:message>
+  <wsdl:message name="InsertLicensesForSuspensionFromPoliceDeptSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertLicensesForSuspensionFromPoliceDeptResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="PoliceServiceSoap">
+    <wsdl:operation name="GetRegistrationData">
+      <wsdl:input message="tns:GetRegistrationDataSoapIn"/>
+      <wsdl:output message="tns:GetRegistrationDataSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseData">
+      <wsdl:input message="tns:GetLicenseDataSoapIn"/>
+      <wsdl:output message="tns:GetLicenseDataSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLicenseStatus">
+      <wsdl:input message="tns:UpdateLicenseStatusSoapIn"/>
+      <wsdl:output message="tns:UpdateLicenseStatusSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegistrationDataTOW">
+      <wsdl:input message="tns:GetRegistrationDataTOWSoapIn"/>
+      <wsdl:output message="tns:GetRegistrationDataTOWSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRegistrationStatus">
+      <wsdl:input message="tns:UpdateRegistrationStatusSoapIn"/>
+      <wsdl:output message="tns:UpdateRegistrationStatusSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDetails">
+      <wsdl:input message="tns:GetLicenseDetailsSoapIn"/>
+      <wsdl:output message="tns:GetLicenseDetailsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetVCROffenceData">
+      <wsdl:input message="tns:GetVCROffenceDataSoapIn"/>
+      <wsdl:output message="tns:GetVCROffenceDataSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetVCROffencePaymentData">
+      <wsdl:input message="tns:GetVCROffencePaymentDataSoapIn"/>
+      <wsdl:output message="tns:GetVCROffencePaymentDataSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVCRStatus">
+      <wsdl:input message="tns:UpdateVCRStatusSoapIn"/>
+      <wsdl:output message="tns:UpdateVCRStatusSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVCRPaymentStatus">
+      <wsdl:input message="tns:UpdateVCRPaymentStatusSoapIn"/>
+      <wsdl:output message="tns:UpdateVCRPaymentStatusSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleTaxPermitFitnessValiditis">
+      <wsdl:input message="tns:GetVehicleTaxPermitFitnessValiditisSoapIn"/>
+      <wsdl:output message="tns:GetVehicleTaxPermitFitnessValiditisSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFlagTaxPermitFCValidities">
+      <wsdl:input message="tns:UpdateFlagTaxPermitFCValiditiesSoapIn"/>
+      <wsdl:output message="tns:UpdateFlagTaxPermitFCValiditiesSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAlternateAddress">
+      <wsdl:input message="tns:InsertAlternateAddressSoapIn"/>
+      <wsdl:output message="tns:InsertAlternateAddressSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegAlternateAddressData">
+      <wsdl:input message="tns:GetRegAlternateAddressDataSoapIn"/>
+      <wsdl:output message="tns:GetRegAlternateAddressDataSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFlagRegAlternateAddress">
+      <wsdl:input message="tns:UpdateFlagRegAlternateAddressSoapIn"/>
+      <wsdl:output message="tns:UpdateFlagRegAlternateAddressSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleLatestData">
+      <wsdl:input message="tns:GetVehicleLatestDataSoapIn"/>
+      <wsdl:output message="tns:GetVehicleLatestDataSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleOldOwnerDetails">
+      <wsdl:input message="tns:GetVehicleOldOwnerDetailsSoapIn"/>
+      <wsdl:output message="tns:GetVehicleOldOwnerDetailsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleOldFinancerDetails">
+      <wsdl:input message="tns:GetVehicleOldFinancerDetailsSoapIn"/>
+      <wsdl:output message="tns:GetVehicleOldFinancerDetailsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetTaxParticlarsForvehicle">
+      <wsdl:input message="tns:GetTaxParticlarsForvehicleSoapIn"/>
+      <wsdl:output message="tns:GetTaxParticlarsForvehicleSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetPanNumberBasedVehicles">
+      <wsdl:input message="tns:GetPanNumberBasedVehiclesSoapIn"/>
+      <wsdl:output message="tns:GetPanNumberBasedVehiclesSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetAAdharNumberBasedVehiclesandLicenses">
+      <wsdl:input message="tns:GetAAdharNumberBasedVehiclesandLicensesSoapIn"/>
+      <wsdl:output message="tns:GetAAdharNumberBasedVehiclesandLicensesSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseLatestData">
+      <wsdl:input message="tns:GetLicenseLatestDataSoapIn"/>
+      <wsdl:output message="tns:GetLicenseLatestDataSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleDataOnRegnnoChassisnoEngineNo">
+      <wsdl:input message="tns:GetVehicleDataOnRegnnoChassisnoEngineNoSoapIn"/>
+      <wsdl:output message="tns:GetVehicleDataOnRegnnoChassisnoEngineNoSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetLLRData">
+      <wsdl:input message="tns:GetLLRDataSoapIn"/>
+      <wsdl:output message="tns:GetLLRDataSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetRCAndLicenseDtlsForMobileEwalletAppDatewise">
+      <wsdl:input message="tns:GetRCAndLicenseDtlsForMobileEwalletAppDatewiseSoapIn"/>
+      <wsdl:output message="tns:GetRCAndLicenseDtlsForMobileEwalletAppDatewiseSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="InsertMwalletPoliceViolations">
+      <wsdl:input message="tns:InsertMwalletPoliceViolationsSoapIn"/>
+      <wsdl:output message="tns:InsertMwalletPoliceViolationsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMwalletpaymentdtls">
+      <wsdl:input message="tns:UpdateMwalletpaymentdtlsSoapIn"/>
+      <wsdl:output message="tns:UpdateMwalletpaymentdtlsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLicenseSuspensionDetailsPolice">
+      <wsdl:input message="tns:InsertLicenseSuspensionDetailsPoliceSoapIn"/>
+      <wsdl:output message="tns:InsertLicenseSuspensionDetailsPoliceSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetPoliceChallanForpointSystem">
+      <wsdl:input message="tns:GetPoliceChallanForpointSystemSoapIn"/>
+      <wsdl:output message="tns:GetPoliceChallanForpointSystemSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateChallanStatus">
+      <wsdl:input message="tns:UpdateChallanStatusSoapIn"/>
+      <wsdl:output message="tns:UpdateChallanStatusSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDL">
+      <wsdl:input message="tns:UpdateDLSoapIn"/>
+      <wsdl:output message="tns:UpdateDLSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetPoliceChallansonLicense">
+      <wsdl:input message="tns:GetPoliceChallansonLicenseSoapIn"/>
+      <wsdl:output message="tns:GetPoliceChallansonLicenseSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="VoilationUpdation">
+      <wsdl:input message="tns:VoilationUpdationSoapIn"/>
+      <wsdl:output message="tns:VoilationUpdationSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseLatestDataDOB">
+      <wsdl:input message="tns:GetLicenseLatestDataDOBSoapIn"/>
+      <wsdl:output message="tns:GetLicenseLatestDataDOBSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPoliceChallanForPointSystemSeqNo">
+      <wsdl:input message="tns:InsertPoliceChallanForPointSystemSeqNoSoapIn"/>
+      <wsdl:output message="tns:InsertPoliceChallanForPointSystemSeqNoSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateChallanNumber">
+      <wsdl:input message="tns:UpdateChallanNumberSoapIn"/>
+      <wsdl:output message="tns:UpdateChallanNumberSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLicensesForSuspensionFromPoliceDept">
+      <wsdl:input message="tns:InsertLicensesForSuspensionFromPoliceDeptSoapIn"/>
+      <wsdl:output message="tns:InsertLicensesForSuspensionFromPoliceDeptSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PoliceServiceSoap" type="tns:PoliceServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetRegistrationData">
+      <soap:operation soapAction="http://tempuri.org/GetRegistrationData" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseData">
+      <soap:operation soapAction="http://tempuri.org/GetLicenseData" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLicenseStatus">
+      <soap:operation soapAction="http://tempuri.org/UpdateLicenseStatus" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegistrationDataTOW">
+      <soap:operation soapAction="http://tempuri.org/GetRegistrationDataTOW" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRegistrationStatus">
+      <soap:operation soapAction="http://tempuri.org/UpdateRegistrationStatus" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDetails">
+      <soap:operation soapAction="http://tempuri.org/GetLicenseDetails" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVCROffenceData">
+      <soap:operation soapAction="http://tempuri.org/GetVCROffenceData" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVCROffencePaymentData">
+      <soap:operation soapAction="http://tempuri.org/GetVCROffencePaymentData" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVCRStatus">
+      <soap:operation soapAction="http://tempuri.org/UpdateVCRStatus" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVCRPaymentStatus">
+      <soap:operation soapAction="http://tempuri.org/UpdateVCRPaymentStatus" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleTaxPermitFitnessValiditis">
+      <soap:operation soapAction="http://tempuri.org/GetVehicleTaxPermitFitnessValiditis" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFlagTaxPermitFCValidities">
+      <soap:operation soapAction="http://tempuri.org/UpdateFlagTaxPermitFCValidities" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAlternateAddress">
+      <soap:operation soapAction="http://tempuri.org/InsertAlternateAddress" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegAlternateAddressData">
+      <soap:operation soapAction="http://tempuri.org/GetRegAlternateAddressData" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFlagRegAlternateAddress">
+      <soap:operation soapAction="http://tempuri.org/UpdateFlagRegAlternateAddress" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleLatestData">
+      <soap:operation soapAction="http://tempuri.org/GetVehicleLatestData" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleOldOwnerDetails">
+      <soap:operation soapAction="http://tempuri.org/GetVehicleOldOwnerDetails" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleOldFinancerDetails">
+      <soap:operation soapAction="http://tempuri.org/GetVehicleOldFinancerDetails" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTaxParticlarsForvehicle">
+      <soap:operation soapAction="http://tempuri.org/GetTaxParticlarsForvehicle" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPanNumberBasedVehicles">
+      <soap:operation soapAction="http://tempuri.org/GetPanNumberBasedVehicles" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAAdharNumberBasedVehiclesandLicenses">
+      <soap:operation soapAction="http://tempuri.org/GetAAdharNumberBasedVehiclesandLicenses" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseLatestData">
+      <soap:operation soapAction="http://tempuri.org/GetLicenseLatestData" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleDataOnRegnnoChassisnoEngineNo">
+      <soap:operation soapAction="http://tempuri.org/GetVehicleDataOnRegnnoChassisnoEngineNo" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLLRData">
+      <soap:operation soapAction="http://tempuri.org/GetLLRData" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRCAndLicenseDtlsForMobileEwalletAppDatewise">
+      <soap:operation soapAction="http://tempuri.org/GetRCAndLicenseDtlsForMobileEwalletAppDatewise" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertMwalletPoliceViolations">
+      <soap:operation soapAction="http://tempuri.org/InsertMwalletPoliceViolations" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMwalletpaymentdtls">
+      <soap:operation soapAction="http://tempuri.org/UpdateMwalletpaymentdtls" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLicenseSuspensionDetailsPolice">
+      <soap:operation soapAction="http://tempuri.org/InsertLicenseSuspensionDetailsPolice" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPoliceChallanForpointSystem">
+      <soap:operation soapAction="http://tempuri.org/GetPoliceChallanForpointSystem" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateChallanStatus">
+      <soap:operation soapAction="http://tempuri.org/UpdateChallanStatus" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDL">
+      <soap:operation soapAction="http://tempuri.org/UpdateDL" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPoliceChallansonLicense">
+      <soap:operation soapAction="http://tempuri.org/GetPoliceChallansonLicense" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VoilationUpdation">
+      <soap:operation soapAction="http://tempuri.org/VoilationUpdation" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseLatestDataDOB">
+      <soap:operation soapAction="http://tempuri.org/GetLicenseLatestDataDOB" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPoliceChallanForPointSystemSeqNo">
+      <soap:operation soapAction="http://tempuri.org/InsertPoliceChallanForPointSystemSeqNo" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateChallanNumber">
+      <soap:operation soapAction="http://tempuri.org/UpdateChallanNumber" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLicensesForSuspensionFromPoliceDept">
+      <soap:operation soapAction="http://tempuri.org/InsertLicensesForSuspensionFromPoliceDept" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PoliceServiceSoap12" type="tns:PoliceServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetRegistrationData">
+      <soap12:operation soapAction="http://tempuri.org/GetRegistrationData" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseData">
+      <soap12:operation soapAction="http://tempuri.org/GetLicenseData" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLicenseStatus">
+      <soap12:operation soapAction="http://tempuri.org/UpdateLicenseStatus" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegistrationDataTOW">
+      <soap12:operation soapAction="http://tempuri.org/GetRegistrationDataTOW" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRegistrationStatus">
+      <soap12:operation soapAction="http://tempuri.org/UpdateRegistrationStatus" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetLicenseDetails" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVCROffenceData">
+      <soap12:operation soapAction="http://tempuri.org/GetVCROffenceData" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVCROffencePaymentData">
+      <soap12:operation soapAction="http://tempuri.org/GetVCROffencePaymentData" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVCRStatus">
+      <soap12:operation soapAction="http://tempuri.org/UpdateVCRStatus" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVCRPaymentStatus">
+      <soap12:operation soapAction="http://tempuri.org/UpdateVCRPaymentStatus" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleTaxPermitFitnessValiditis">
+      <soap12:operation soapAction="http://tempuri.org/GetVehicleTaxPermitFitnessValiditis" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFlagTaxPermitFCValidities">
+      <soap12:operation soapAction="http://tempuri.org/UpdateFlagTaxPermitFCValidities" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAlternateAddress">
+      <soap12:operation soapAction="http://tempuri.org/InsertAlternateAddress" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegAlternateAddressData">
+      <soap12:operation soapAction="http://tempuri.org/GetRegAlternateAddressData" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFlagRegAlternateAddress">
+      <soap12:operation soapAction="http://tempuri.org/UpdateFlagRegAlternateAddress" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleLatestData">
+      <soap12:operation soapAction="http://tempuri.org/GetVehicleLatestData" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleOldOwnerDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetVehicleOldOwnerDetails" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleOldFinancerDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetVehicleOldFinancerDetails" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTaxParticlarsForvehicle">
+      <soap12:operation soapAction="http://tempuri.org/GetTaxParticlarsForvehicle" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPanNumberBasedVehicles">
+      <soap12:operation soapAction="http://tempuri.org/GetPanNumberBasedVehicles" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAAdharNumberBasedVehiclesandLicenses">
+      <soap12:operation soapAction="http://tempuri.org/GetAAdharNumberBasedVehiclesandLicenses" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseLatestData">
+      <soap12:operation soapAction="http://tempuri.org/GetLicenseLatestData" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleDataOnRegnnoChassisnoEngineNo">
+      <soap12:operation soapAction="http://tempuri.org/GetVehicleDataOnRegnnoChassisnoEngineNo" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLLRData">
+      <soap12:operation soapAction="http://tempuri.org/GetLLRData" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRCAndLicenseDtlsForMobileEwalletAppDatewise">
+      <soap12:operation soapAction="http://tempuri.org/GetRCAndLicenseDtlsForMobileEwalletAppDatewise" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertMwalletPoliceViolations">
+      <soap12:operation soapAction="http://tempuri.org/InsertMwalletPoliceViolations" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMwalletpaymentdtls">
+      <soap12:operation soapAction="http://tempuri.org/UpdateMwalletpaymentdtls" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLicenseSuspensionDetailsPolice">
+      <soap12:operation soapAction="http://tempuri.org/InsertLicenseSuspensionDetailsPolice" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPoliceChallanForpointSystem">
+      <soap12:operation soapAction="http://tempuri.org/GetPoliceChallanForpointSystem" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateChallanStatus">
+      <soap12:operation soapAction="http://tempuri.org/UpdateChallanStatus" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDL">
+      <soap12:operation soapAction="http://tempuri.org/UpdateDL" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPoliceChallansonLicense">
+      <soap12:operation soapAction="http://tempuri.org/GetPoliceChallansonLicense" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VoilationUpdation">
+      <soap12:operation soapAction="http://tempuri.org/VoilationUpdation" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseLatestDataDOB">
+      <soap12:operation soapAction="http://tempuri.org/GetLicenseLatestDataDOB" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPoliceChallanForPointSystemSeqNo">
+      <soap12:operation soapAction="http://tempuri.org/InsertPoliceChallanForPointSystemSeqNo" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateChallanNumber">
+      <soap12:operation soapAction="http://tempuri.org/UpdateChallanNumber" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLicensesForSuspensionFromPoliceDept">
+      <soap12:operation soapAction="http://tempuri.org/InsertLicensesForSuspensionFromPoliceDept" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PoliceService">
+    <wsdl:port name="PoliceServiceSoap" binding="tns:PoliceServiceSoap">
+      <soap:address location="https://tgtransport.net/policewebsrv/policeservice.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="PoliceServiceSoap12" binding="tns:PoliceServiceSoap12">
+      <soap12:address location="https://tgtransport.net/policewebsrv/policeservice.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

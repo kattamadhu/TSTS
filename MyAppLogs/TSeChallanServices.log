@@ -1,0 +1,1712 @@
+2018-10-15 02:54:12.275  INFO 2464 --- [http-nio-8080-exec-3] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:428) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:684) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167) [na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641) [na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.base/java.lang.Thread.run(Thread.java:844) [na:na]
+
+2018-10-15 10:15:10.240 DEBUG 2464 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        unitentity0_.unit_cd as unit_cd1_23_,
+        unitentity0_.state_cd as state_cd2_23_,
+        unitentity0_.unit_name as unit_nam3_23_,
+        unitentity0_.unit_sf as unit_sf4_23_ 
+    from
+        ma_unit unitentity0_ 
+    where
+        unitentity0_.state_cd=?
+2018-10-15 10:15:10.241 DEBUG 2464 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        cadreentit0_.cadre_cd as cadre_cd1_1_,
+        cadreentit0_.cadre_name as cadre_na2_1_,
+        cadreentit0_.cadre_sf as cadre_sf3_1_ 
+    from
+        ma_cadre cadreentit0_
+2018-10-15 10:15:10.245  INFO 2464 --- [http-nio-8080-exec-10] com.echallan.masters.MasterService       : getstateMaster details found
+2018-10-15 10:15:10.246  INFO 2464 --- [http-nio-8080-exec-3] com.echallan.masters.MasterService       : getcadreMaster details found
+2018-10-15 11:12:17.654  INFO 2464 --- [http-nio-8080-exec-10] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:428) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:684) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167) [na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641) [na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.base/java.lang.Thread.run(Thread.java:844) [na:na]
+
+2018-10-15 11:14:42.891  INFO 2464 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-15 11:14:42.896  INFO 2464 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-15 11:33:10.858  INFO 12476 --- [restartedMain] c.e.TsEchallanServicesApplication        : Starting TsEchallanServicesApplication on Madhu with PID 12476 (G:\OxygenWorkSpace2\TSEchallanServices\target\classes started by Madhusudhan in G:\OxygenWorkSpace2\TSEchallanServices)
+2018-10-15 11:33:10.860  INFO 12476 --- [restartedMain] c.e.TsEchallanServicesApplication        : No active profile set, falling back to default profiles: default
+2018-10-15 11:33:13.065  INFO 12476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-15 11:33:13.065  INFO 12476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-10-15 11:33:13.069  INFO 12476 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-9.0.4\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\app\Madhusudhan\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Apache24\bin;C:\Apache24;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk-9.0.4\bin;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Madhusudhan\AppData\Local\Microsoft\WindowsApps;C:\Users\Madhusudhan\AppData\Roaming\npm;;.]
+2018-10-15 11:33:13.156  INFO 12476 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-15 11:33:13.773  INFO 12476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-15 11:33:13.928  INFO 12476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-15 11:33:13.973  INFO 12476 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-15 11:33:14.042  INFO 12476 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-10-15 11:33:14.044  INFO 12476 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-10-15 11:33:14.087  INFO 12476 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-10-15 11:33:14.189  INFO 12476 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018-10-15 11:33:16.867  INFO 12476 --- [restartedMain] c.e.TsEchallanServicesApplication        : Started TsEchallanServicesApplication in 6.236 seconds (JVM running for 9.831)
+2018-10-15 11:33:38.500  INFO 12476 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-15 11:33:38.672  INFO 12476 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-10-15 11:33:38.755 DEBUG 12476 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        officer_v0_.emp_id as emp_id1_26_,
+        officer_v0_.division_cd as division2_26_,
+        officer_v0_.division_name as division3_26_,
+        officer_v0_.zone_cd as zone_cd4_26_,
+        officer_v0_.zone_name as zone_nam5_26_,
+        officer_v0_.actvie_status as actvie_s6_26_,
+        officer_v0_.cadre_cd as cadre_cd7_26_,
+        officer_v0_.cadre_sf as cadre_sf8_26_,
+        officer_v0_.contact_no as contact_9_26_,
+        officer_v0_.duties as duties10_26_,
+        officer_v0_.email_id as email_i11_26_,
+        officer_v0_.emp_name as emp_nam12_26_,
+        officer_v0_.lost_login as lost_lo13_26_,
+        officer_v0_.ps_cd as ps_cd14_26_,
+        officer_v0_.ps_name as ps_name15_26_,
+        officer_v0_.pwd as pwd16_26_,
+        officer_v0_.role_cd as role_cd17_26_,
+        officer_v0_.state_cd as state_c18_26_,
+        officer_v0_.state_name as state_n19_26_,
+        officer_v0_.unit_name as unit_na20_26_,
+        officer_v0_.unit_cd as unit_cd21_26_,
+        officer_v0_.login_id as login_i22_26_ 
+    from
+        officer_v officer_v0_ 
+    where
+        officer_v0_.login_id=? 
+        and officer_v0_.pwd=?
+2018-10-15 11:33:38.796  INFO 12476 --- [http-nio-8080-exec-2] c.e.o.OfficerRegistrationService         : getofficerDetails details found
+2018-10-15 11:33:40.031 DEBUG 12476 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        enforcemen0_.login_id as login_id1_0_0_,
+        enforcemen0_.camera as camera2_0_0_,
+        enforcemen0_.camera_amt as camera_a3_0_0_,
+        enforcemen0_.crane as crane4_0_0_,
+        enforcemen0_.crane_amt as crane_am5_0_0_,
+        enforcemen0_.cadre_cd as cadre_cd6_0_0_,
+        enforcemen0_.cadre_sf as cadre_sf7_0_0_,
+        enforcemen0_.contact_no as contact_8_0_0_,
+        enforcemen0_.created_dt as created_9_0_0_,
+        enforcemen0_.dd as dd10_0_0_,
+        enforcemen0_.division_cd as divisio11_0_0_,
+        enforcemen0_.division_name as divisio12_0_0_,
+        enforcemen0_.emp_id as emp_id13_0_0_,
+        enforcemen0_.emp_name as emp_nam14_0_0_,
+        enforcemen0_.lasergun as lasergu15_0_0_,
+        enforcemen0_.lasergun_amt as lasergu16_0_0_,
+        enforcemen0_.others as others17_0_0_,
+        enforcemen0_.others_amt as others_18_0_0_,
+        enforcemen0_.ps_cd as ps_cd19_0_0_,
+        enforcemen0_.ps_name as ps_name20_0_0_,
+        enforcemen0_.redlight as redligh21_0_0_,
+        enforcemen0_.redlight_amt as redligh22_0_0_,
+        enforcemen0_.scmc as scmc23_0_0_,
+        enforcemen0_.scmc_amt as scmc_am24_0_0_,
+        enforcemen0_.socialnetwork as socialn25_0_0_,
+        enforcemen0_.socialnetwork_amt as socialn26_0_0_,
+        enforcemen0_.spot as spot27_0_0_,
+        enforcemen0_.spot_amt as spot_am28_0_0_,
+        enforcemen0_.spot_chargesheet as spot_ch29_0_0_,
+        enforcemen0_.state_cd as state_c30_0_0_,
+        enforcemen0_.state_name as state_n31_0_0_,
+        enforcemen0_.unit_cd as unit_cd32_0_0_,
+        enforcemen0_.unit_name as unit_na33_0_0_,
+        enforcemen0_.zone_cd as zone_cd34_0_0_,
+        enforcemen0_.zone_name as zone_na35_0_0_ 
+    from
+        enforce_officer_v enforcemen0_ 
+    where
+        enforcemen0_.login_id=?
+2018-10-15 11:36:42.072 DEBUG 12476 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        maloginide0_.emp_id as emp_id1_14_,
+        maloginide0_.active_status as active_s2_14_,
+        maloginide0_.cadre_cd as cadre_cd3_14_,
+        maloginide0_.contact_no as contact_4_14_,
+        maloginide0_.email_id as email_id5_14_,
+        maloginide0_.emp_name as emp_name6_14_,
+        maloginide0_.last_login as last_log7_14_,
+        maloginide0_.login_id as login_id8_14_,
+        maloginide0_.otp_no as otp_no9_14_,
+        maloginide0_.ps_cd as ps_cd10_14_,
+        maloginide0_.pwd as pwd11_14_,
+        maloginide0_.role_cd as role_cd12_14_ 
+    from
+        ma_login_id maloginide0_ 
+    where
+        maloginide0_.emp_id=?
+2018-10-15 11:36:42.092 DEBUG 12476 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        maloginide0_.emp_id as emp_id1_14_,
+        maloginide0_.active_status as active_s2_14_,
+        maloginide0_.cadre_cd as cadre_cd3_14_,
+        maloginide0_.contact_no as contact_4_14_,
+        maloginide0_.email_id as email_id5_14_,
+        maloginide0_.emp_name as emp_name6_14_,
+        maloginide0_.last_login as last_log7_14_,
+        maloginide0_.login_id as login_id8_14_,
+        maloginide0_.otp_no as otp_no9_14_,
+        maloginide0_.ps_cd as ps_cd10_14_,
+        maloginide0_.pwd as pwd11_14_,
+        maloginide0_.role_cd as role_cd12_14_ 
+    from
+        ma_login_id maloginide0_ 
+    where
+        maloginide0_.pwd=?
+2018-10-15 11:41:21.570  INFO 12476 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-15 11:41:21.573  INFO 12476 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-15 11:41:32.047  INFO 27928 --- [restartedMain] c.e.TsEchallanServicesApplication        : Starting TsEchallanServicesApplication on Madhu with PID 27928 (G:\OxygenWorkSpace2\TSEchallanServices\target\classes started by Madhusudhan in G:\OxygenWorkSpace2\TSEchallanServices)
+2018-10-15 11:41:32.048  INFO 27928 --- [restartedMain] c.e.TsEchallanServicesApplication        : No active profile set, falling back to default profiles: default
+2018-10-15 11:41:33.917  INFO 27928 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-15 11:41:33.918  INFO 27928 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-10-15 11:41:33.922  INFO 27928 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-9.0.4\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\app\Madhusudhan\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Apache24\bin;C:\Apache24;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk-9.0.4\bin;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Madhusudhan\AppData\Local\Microsoft\WindowsApps;C:\Users\Madhusudhan\AppData\Roaming\npm;;.]
+2018-10-15 11:41:34.009  INFO 27928 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-15 11:41:34.614  INFO 27928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-15 11:41:34.756  INFO 27928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-15 11:41:34.800  INFO 27928 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-15 11:41:34.847  INFO 27928 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-10-15 11:41:34.848  INFO 27928 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-10-15 11:41:34.884  INFO 27928 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-10-15 11:41:34.992  INFO 27928 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018-10-15 11:41:37.727  INFO 27928 --- [restartedMain] c.e.TsEchallanServicesApplication        : Started TsEchallanServicesApplication in 5.908 seconds (JVM running for 6.627)
+2018-10-15 11:42:01.029  INFO 27928 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-15 11:42:01.113  INFO 27928 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-10-15 11:42:01.173 DEBUG 27928 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        maloginide0_.emp_id as emp_id1_14_,
+        maloginide0_.active_status as active_s2_14_,
+        maloginide0_.cadre_cd as cadre_cd3_14_,
+        maloginide0_.contact_no as contact_4_14_,
+        maloginide0_.email_id as email_id5_14_,
+        maloginide0_.emp_name as emp_name6_14_,
+        maloginide0_.last_login as last_log7_14_,
+        maloginide0_.login_id as login_id8_14_,
+        maloginide0_.otp_no as otp_no9_14_,
+        maloginide0_.ps_cd as ps_cd10_14_,
+        maloginide0_.pwd as pwd11_14_,
+        maloginide0_.role_cd as role_cd12_14_ 
+    from
+        ma_login_id maloginide0_ 
+    where
+        maloginide0_.emp_id=?
+2018-10-15 11:42:01.200 DEBUG 27928 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        maloginide0_.emp_id as emp_id1_14_,
+        maloginide0_.active_status as active_s2_14_,
+        maloginide0_.cadre_cd as cadre_cd3_14_,
+        maloginide0_.contact_no as contact_4_14_,
+        maloginide0_.email_id as email_id5_14_,
+        maloginide0_.emp_name as emp_name6_14_,
+        maloginide0_.last_login as last_log7_14_,
+        maloginide0_.login_id as login_id8_14_,
+        maloginide0_.otp_no as otp_no9_14_,
+        maloginide0_.ps_cd as ps_cd10_14_,
+        maloginide0_.pwd as pwd11_14_,
+        maloginide0_.role_cd as role_cd12_14_ 
+    from
+        ma_login_id maloginide0_ 
+    where
+        maloginide0_.emp_id=? 
+        and maloginide0_.pwd=?
+2018-10-15 11:42:01.210 DEBUG 27928 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    update
+        ma_login_id 
+    set
+        active_status=?,
+        cadre_cd=?,
+        contact_no=?,
+        email_id=?,
+        emp_name=?,
+        last_login=?,
+        login_id=?,
+        otp_no=?,
+        ps_cd=?,
+        pwd=?,
+        role_cd=? 
+    where
+        emp_id=?
+2018-10-15 11:42:17.858 DEBUG 27928 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        maloginide0_.emp_id as emp_id1_14_,
+        maloginide0_.active_status as active_s2_14_,
+        maloginide0_.cadre_cd as cadre_cd3_14_,
+        maloginide0_.contact_no as contact_4_14_,
+        maloginide0_.email_id as email_id5_14_,
+        maloginide0_.emp_name as emp_name6_14_,
+        maloginide0_.last_login as last_log7_14_,
+        maloginide0_.login_id as login_id8_14_,
+        maloginide0_.otp_no as otp_no9_14_,
+        maloginide0_.ps_cd as ps_cd10_14_,
+        maloginide0_.pwd as pwd11_14_,
+        maloginide0_.role_cd as role_cd12_14_ 
+    from
+        ma_login_id maloginide0_ 
+    where
+        maloginide0_.emp_id=?
+2018-10-15 11:42:17.863 DEBUG 27928 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        maloginide0_.emp_id as emp_id1_14_,
+        maloginide0_.active_status as active_s2_14_,
+        maloginide0_.cadre_cd as cadre_cd3_14_,
+        maloginide0_.contact_no as contact_4_14_,
+        maloginide0_.email_id as email_id5_14_,
+        maloginide0_.emp_name as emp_name6_14_,
+        maloginide0_.last_login as last_log7_14_,
+        maloginide0_.login_id as login_id8_14_,
+        maloginide0_.otp_no as otp_no9_14_,
+        maloginide0_.ps_cd as ps_cd10_14_,
+        maloginide0_.pwd as pwd11_14_,
+        maloginide0_.role_cd as role_cd12_14_ 
+    from
+        ma_login_id maloginide0_ 
+    where
+        maloginide0_.emp_id=? 
+        and maloginide0_.pwd=?
+2018-10-15 11:42:17.866 DEBUG 27928 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    update
+        ma_login_id 
+    set
+        active_status=?,
+        cadre_cd=?,
+        contact_no=?,
+        email_id=?,
+        emp_name=?,
+        last_login=?,
+        login_id=?,
+        otp_no=?,
+        ps_cd=?,
+        pwd=?,
+        role_cd=? 
+    where
+        emp_id=?
+2018-10-15 11:44:32.022  INFO 27928 --- [http-nio-8080-exec-6] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in the request target. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:479) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:684) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167) [na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641) [na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.base/java.lang.Thread.run(Thread.java:844) [na:na]
+
+2018-10-15 11:46:06.832 DEBUG 27928 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        officer_v0_.emp_id as emp_id1_26_,
+        officer_v0_.division_cd as division2_26_,
+        officer_v0_.division_name as division3_26_,
+        officer_v0_.zone_cd as zone_cd4_26_,
+        officer_v0_.zone_name as zone_nam5_26_,
+        officer_v0_.actvie_status as actvie_s6_26_,
+        officer_v0_.cadre_cd as cadre_cd7_26_,
+        officer_v0_.cadre_sf as cadre_sf8_26_,
+        officer_v0_.contact_no as contact_9_26_,
+        officer_v0_.duties as duties10_26_,
+        officer_v0_.email_id as email_i11_26_,
+        officer_v0_.emp_name as emp_nam12_26_,
+        officer_v0_.lost_login as lost_lo13_26_,
+        officer_v0_.ps_cd as ps_cd14_26_,
+        officer_v0_.ps_name as ps_name15_26_,
+        officer_v0_.pwd as pwd16_26_,
+        officer_v0_.role_cd as role_cd17_26_,
+        officer_v0_.state_cd as state_c18_26_,
+        officer_v0_.state_name as state_n19_26_,
+        officer_v0_.unit_name as unit_na20_26_,
+        officer_v0_.unit_cd as unit_cd21_26_,
+        officer_v0_.login_id as login_i22_26_ 
+    from
+        officer_v officer_v0_ 
+    where
+        officer_v0_.login_id=?
+2018-10-15 11:46:06.845 DEBUG 27928 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        challantyp0_.challan_type as challan_1_3_0_,
+        challantyp0_.challan_desc as challan_2_3_0_,
+        challantyp0_.challan_sf as challan_3_3_0_ 
+    from
+        ma_challan_type challantyp0_ 
+    where
+        challantyp0_.challan_type=?
+2018-10-15 11:46:06.860 DEBUG 27928 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    {call p_seq_test(?)}
+2018-10-15 11:46:06.965 DEBUG 27928 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        challannum0_.challan_type as challan_1_27_,
+        challannum0_.challan_sf as challan_2_27_,
+        challannum0_.seq_no as seq_no3_27_ 
+    from
+        seq_challan challannum0_ 
+    where
+        challannum0_.challan_type=?
+2018-10-15 11:46:06.966  INFO 27928 --- [http-nio-8080-exec-8] c.e.c.EchallanGenerationService          : ChallanNumberSequence *****:6
+2018-10-15 11:46:07.020  INFO 27928 --- [http-nio-8080-exec-8] com.echallan.utils.Utils                 : Successfully created directory: 15
+2018-10-15 11:46:07.022  INFO 27928 --- [http-nio-8080-exec-8] com.echallan.utils.Utils                 : Successfully created directory: 23
+2018-10-15 11:46:07.121 DEBUG 27928 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    insert 
+    into
+        t_eticket
+        (fine_amt, tfine_amt, uch_amt, amt_collect_by_login_id, booked_ps_cd, cadre_cd, challan_base, challan_no, challan_type, created_dt, date_of_pay, dept_cd, detain_no_of_items, gps_lat, gps_long, gtwy_cd, image, login_id, offence_dt, paid_amt, payment_status, point_cd, ps_juris_cd, reduction_amt, regn_no, remark_cd, responsible_ps_cd, state_cd, transaction_id, unit_cd, eticket_no) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2018-10-15 11:46:07.133 DEBUG 27928 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    insert 
+    into
+        t_violations
+        (afine_amt, created_dt, eticket_no, offence_cd) 
+    values
+        (?, ?, ?, ?)
+2018-10-15 11:46:07.136 DEBUG 27928 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    insert 
+    into
+        t_violations
+        (afine_amt, created_dt, eticket_no, offence_cd) 
+    values
+        (?, ?, ?, ?)
+2018-10-15 11:46:07.182  INFO 27928 --- [http-nio-8080-exec-8] c.e.c.EchallanGenerationController       : [method:generateEchallan] response :com.echallan.response.CommonResponse@5c859232
+2018-10-15 11:47:41.766 DEBUG 27928 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        officer_v0_.emp_id as emp_id1_26_,
+        officer_v0_.division_cd as division2_26_,
+        officer_v0_.division_name as division3_26_,
+        officer_v0_.zone_cd as zone_cd4_26_,
+        officer_v0_.zone_name as zone_nam5_26_,
+        officer_v0_.actvie_status as actvie_s6_26_,
+        officer_v0_.cadre_cd as cadre_cd7_26_,
+        officer_v0_.cadre_sf as cadre_sf8_26_,
+        officer_v0_.contact_no as contact_9_26_,
+        officer_v0_.duties as duties10_26_,
+        officer_v0_.email_id as email_i11_26_,
+        officer_v0_.emp_name as emp_nam12_26_,
+        officer_v0_.lost_login as lost_lo13_26_,
+        officer_v0_.ps_cd as ps_cd14_26_,
+        officer_v0_.ps_name as ps_name15_26_,
+        officer_v0_.pwd as pwd16_26_,
+        officer_v0_.role_cd as role_cd17_26_,
+        officer_v0_.state_cd as state_c18_26_,
+        officer_v0_.state_name as state_n19_26_,
+        officer_v0_.unit_name as unit_na20_26_,
+        officer_v0_.unit_cd as unit_cd21_26_,
+        officer_v0_.login_id as login_i22_26_ 
+    from
+        officer_v officer_v0_ 
+    where
+        officer_v0_.login_id=?
+2018-10-15 11:47:41.770 DEBUG 27928 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        challantyp0_.challan_type as challan_1_3_0_,
+        challantyp0_.challan_desc as challan_2_3_0_,
+        challantyp0_.challan_sf as challan_3_3_0_ 
+    from
+        ma_challan_type challantyp0_ 
+    where
+        challantyp0_.challan_type=?
+2018-10-15 11:47:41.772 DEBUG 27928 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    {call p_seq_test(?)}
+2018-10-15 11:47:41.879 DEBUG 27928 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        challannum0_.challan_type as challan_1_27_,
+        challannum0_.challan_sf as challan_2_27_,
+        challannum0_.seq_no as seq_no3_27_ 
+    from
+        seq_challan challannum0_ 
+    where
+        challannum0_.challan_type=?
+2018-10-15 11:47:41.881  INFO 27928 --- [http-nio-8080-exec-2] c.e.c.EchallanGenerationService          : ChallanNumberSequence *****:1
+2018-10-15 11:47:41.888  INFO 27928 --- [http-nio-8080-exec-2] c.e.c.EchallanGenerationService          : [method:insertdetainedItems] error
+
+java.lang.NullPointerException: null
+	at com.echallan.challanGeneration.EchallanGenerationService.insertDetainItems(EchallanGenerationService.java:861) [classes/:na]
+	at com.echallan.challanGeneration.EchallanGenerationService.generateEchallan(EchallanGenerationService.java:719) [classes/:na]
+	at com.echallan.challanGeneration.EchallanGenerationService$$FastClassBySpringCGLIB$$cadba0af.invoke(<generated>) [classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) [spring-core-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746) [spring-aop-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) [spring-aop-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at com.echallan.challanGeneration.EchallanGenerationService$$EnhancerBySpringCGLIB$$f7e79439.generateEchallan(<generated>) ~[classes/:na]
+	at com.echallan.challanGeneration.EchallanGenerationController.generateEchallan(EchallanGenerationController.java:31) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.base/java.lang.Thread.run(Thread.java:844) ~[na:na]
+
+2018-10-15 11:47:41.894 DEBUG 27928 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    insert 
+    into
+        t_eticket
+        (fine_amt, tfine_amt, uch_amt, amt_collect_by_login_id, booked_ps_cd, cadre_cd, challan_base, challan_no, challan_type, created_dt, date_of_pay, dept_cd, detain_no_of_items, gps_lat, gps_long, gtwy_cd, image, login_id, offence_dt, paid_amt, payment_status, point_cd, ps_juris_cd, reduction_amt, regn_no, remark_cd, responsible_ps_cd, state_cd, transaction_id, unit_cd, eticket_no) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2018-10-15 11:47:41.900  WARN 27928 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2018-10-15 11:47:41.900 ERROR 27928 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry '1' for key 'PRIMARY'
+2018-10-15 11:47:41.918 ERROR 27928 --- [http-nio-8080-exec-2] c.e.c.EchallanGenerationService          : Challan Generation failed . reason
+
+javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:149) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:157) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:164) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:814) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:774) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener$1.cascade(JpaPersistEventListener.java:80) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:467) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:392) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:193) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeCollectionElements(Cascade.java:500) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeCollection(Cascade.java:432) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:395) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:193) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:126) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeAfterSave(AbstractSaveEventListener.java:445) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:281) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:182) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:125) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:783) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:768) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:350) ~[spring-orm-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at com.sun.proxy.$Proxy117.persist(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:305) ~[spring-orm-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at com.sun.proxy.$Proxy117.persist(Unknown Source) ~[na:na]
+	at com.echallan.challanGeneration.EchallanGenerationService.generateEchallan(EchallanGenerationService.java:791) ~[classes/:na]
+	at com.echallan.challanGeneration.EchallanGenerationService$$FastClassBySpringCGLIB$$cadba0af.invoke(<generated>) [classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) [spring-core-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746) [spring-aop-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) [spring-aop-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at com.echallan.challanGeneration.EchallanGenerationService$$EnhancerBySpringCGLIB$$f7e79439.generateEchallan(<generated>) ~[classes/:na]
+	at com.echallan.challanGeneration.EchallanGenerationController.generateEchallan(EchallanGenerationController.java:31) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.base/java.lang.Thread.run(Thread.java:844) ~[na:na]
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:111) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:97) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:178) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3032) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3547) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:89) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:600) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeInserts(ActionQueue.java:457) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:258) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:318) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:275) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:182) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:113) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:807) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	... 107 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488) ~[na:na]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:936) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-2.7.9.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:175) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	... 122 common frames omitted
+
+2018-10-15 11:47:41.938 ERROR 27928 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: Transaction was marked for rollback only; cannot commit; nested exception is org.hibernate.TransactionException: Transaction was marked for rollback only; cannot commit] with root cause
+
+org.hibernate.TransactionException: Transaction was marked for rollback only; cannot commit
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:228) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:68) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:536) ~[spring-orm-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:746) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:714) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:532) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:304) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at com.echallan.challanGeneration.EchallanGenerationService$$EnhancerBySpringCGLIB$$f7e79439.generateEchallan(<generated>) ~[classes/:na]
+	at com.echallan.challanGeneration.EchallanGenerationController.generateEchallan(EchallanGenerationController.java:31) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167) [na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641) [na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.base/java.lang.Thread.run(Thread.java:844) [na:na]
+
+2018-10-15 11:49:17.672  INFO 27928 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-15 11:49:17.676  INFO 27928 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-15 11:50:39.298  INFO 27820 --- [restartedMain] c.e.TsEchallanServicesApplication        : Starting TsEchallanServicesApplication on Madhu with PID 27820 (G:\OxygenWorkSpace2\TSEchallanServices\target\classes started by Madhusudhan in G:\OxygenWorkSpace2\TSEchallanServices)
+2018-10-15 11:50:39.300  INFO 27820 --- [restartedMain] c.e.TsEchallanServicesApplication        : No active profile set, falling back to default profiles: default
+2018-10-15 11:50:41.251  INFO 27820 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-15 11:50:41.252  INFO 27820 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-10-15 11:50:41.256  INFO 27820 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-9.0.4\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\app\Madhusudhan\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Apache24\bin;C:\Apache24;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk-9.0.4\bin;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Madhusudhan\AppData\Local\Microsoft\WindowsApps;C:\Users\Madhusudhan\AppData\Roaming\npm;;.]
+2018-10-15 11:50:41.346  INFO 27820 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-15 11:50:41.985  INFO 27820 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-15 11:50:42.132  INFO 27820 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-15 11:50:42.176  INFO 27820 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-15 11:50:42.224  INFO 27820 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-10-15 11:50:42.225  INFO 27820 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-10-15 11:50:42.260  INFO 27820 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-10-15 11:50:42.363  INFO 27820 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018-10-15 11:50:45.039  INFO 27820 --- [restartedMain] c.e.TsEchallanServicesApplication        : Started TsEchallanServicesApplication in 5.968 seconds (JVM running for 6.689)
+2018-10-15 11:51:00.513  INFO 27820 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-15 11:51:00.644  INFO 27820 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-10-15 11:51:00.715 DEBUG 27820 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        officer_v0_.emp_id as emp_id1_26_,
+        officer_v0_.division_cd as division2_26_,
+        officer_v0_.division_name as division3_26_,
+        officer_v0_.zone_cd as zone_cd4_26_,
+        officer_v0_.zone_name as zone_nam5_26_,
+        officer_v0_.actvie_status as actvie_s6_26_,
+        officer_v0_.cadre_cd as cadre_cd7_26_,
+        officer_v0_.cadre_sf as cadre_sf8_26_,
+        officer_v0_.contact_no as contact_9_26_,
+        officer_v0_.duties as duties10_26_,
+        officer_v0_.email_id as email_i11_26_,
+        officer_v0_.emp_name as emp_nam12_26_,
+        officer_v0_.lost_login as lost_lo13_26_,
+        officer_v0_.ps_cd as ps_cd14_26_,
+        officer_v0_.ps_name as ps_name15_26_,
+        officer_v0_.pwd as pwd16_26_,
+        officer_v0_.role_cd as role_cd17_26_,
+        officer_v0_.state_cd as state_c18_26_,
+        officer_v0_.state_name as state_n19_26_,
+        officer_v0_.unit_name as unit_na20_26_,
+        officer_v0_.unit_cd as unit_cd21_26_,
+        officer_v0_.login_id as login_i22_26_ 
+    from
+        officer_v officer_v0_ 
+    where
+        officer_v0_.login_id=?
+2018-10-15 11:51:00.753 DEBUG 27820 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        challantyp0_.challan_type as challan_1_3_0_,
+        challantyp0_.challan_desc as challan_2_3_0_,
+        challantyp0_.challan_sf as challan_3_3_0_ 
+    from
+        ma_challan_type challantyp0_ 
+    where
+        challantyp0_.challan_type=?
+2018-10-15 11:51:00.788 DEBUG 27820 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    {call p_seq_test(?)}
+2018-10-15 11:51:00.949 DEBUG 27820 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        challannum0_.challan_type as challan_1_27_,
+        challannum0_.challan_sf as challan_2_27_,
+        challannum0_.seq_no as seq_no3_27_ 
+    from
+        seq_challan challannum0_ 
+    where
+        challannum0_.challan_type=?
+2018-10-15 11:51:00.951  INFO 27820 --- [http-nio-8080-exec-1] c.e.c.EchallanGenerationService          : ChallanNumberSequence *****:2
+2018-10-15 11:51:00.966 DEBUG 27820 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    insert 
+    into
+        t_eticket
+        (fine_amt, tfine_amt, uch_amt, amt_collect_by_login_id, booked_ps_cd, cadre_cd, challan_base, challan_no, challan_type, created_dt, date_of_pay, dept_cd, detain_no_of_items, gps_lat, gps_long, gtwy_cd, image, login_id, offence_dt, paid_amt, payment_status, point_cd, ps_juris_cd, reduction_amt, regn_no, remark_cd, responsible_ps_cd, state_cd, transaction_id, unit_cd, eticket_no) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2018-10-15 11:51:00.970  WARN 27820 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2018-10-15 11:51:00.970 ERROR 27820 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry '2' for key 'PRIMARY'
+2018-10-15 11:51:00.979 ERROR 27820 --- [http-nio-8080-exec-1] c.e.c.EchallanGenerationService          : Challan Generation failed . reason
+
+javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:149) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:157) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:164) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:814) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:774) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener$1.cascade(JpaPersistEventListener.java:80) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:467) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:392) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:193) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeCollectionElements(Cascade.java:500) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeCollection(Cascade.java:432) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:395) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:193) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:126) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeAfterSave(AbstractSaveEventListener.java:445) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:281) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:182) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:125) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:783) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:768) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:350) ~[spring-orm-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at com.sun.proxy.$Proxy117.persist(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:305) ~[spring-orm-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at com.sun.proxy.$Proxy117.persist(Unknown Source) ~[na:na]
+	at com.echallan.challanGeneration.EchallanGenerationService.generateEchallan(EchallanGenerationService.java:791) ~[classes/:na]
+	at com.echallan.challanGeneration.EchallanGenerationService$$FastClassBySpringCGLIB$$cadba0af.invoke(<generated>) [classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) [spring-core-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746) [spring-aop-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) [spring-aop-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at com.echallan.challanGeneration.EchallanGenerationService$$EnhancerBySpringCGLIB$$dfe477b8.generateEchallan(<generated>) ~[classes/:na]
+	at com.echallan.challanGeneration.EchallanGenerationController.generateEchallan(EchallanGenerationController.java:31) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.base/java.lang.Thread.run(Thread.java:844) ~[na:na]
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:111) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:97) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:178) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3032) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3547) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:89) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:600) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeInserts(ActionQueue.java:457) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:258) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:318) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:275) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:182) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:113) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:807) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	... 107 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '2' for key 'PRIMARY'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488) ~[na:na]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:936) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-2.7.9.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:175) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	... 122 common frames omitted
+
+2018-10-15 11:51:00.995 ERROR 27820 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: Transaction was marked for rollback only; cannot commit; nested exception is org.hibernate.TransactionException: Transaction was marked for rollback only; cannot commit] with root cause
+
+org.hibernate.TransactionException: Transaction was marked for rollback only; cannot commit
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:228) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:68) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:536) ~[spring-orm-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:746) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:714) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:532) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:304) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at com.echallan.challanGeneration.EchallanGenerationService$$EnhancerBySpringCGLIB$$dfe477b8.generateEchallan(<generated>) ~[classes/:na]
+	at com.echallan.challanGeneration.EchallanGenerationController.generateEchallan(EchallanGenerationController.java:31) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167) [na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641) [na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.base/java.lang.Thread.run(Thread.java:844) [na:na]
+
+2018-10-15 11:52:35.893 DEBUG 27820 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        officer_v0_.emp_id as emp_id1_26_,
+        officer_v0_.division_cd as division2_26_,
+        officer_v0_.division_name as division3_26_,
+        officer_v0_.zone_cd as zone_cd4_26_,
+        officer_v0_.zone_name as zone_nam5_26_,
+        officer_v0_.actvie_status as actvie_s6_26_,
+        officer_v0_.cadre_cd as cadre_cd7_26_,
+        officer_v0_.cadre_sf as cadre_sf8_26_,
+        officer_v0_.contact_no as contact_9_26_,
+        officer_v0_.duties as duties10_26_,
+        officer_v0_.email_id as email_i11_26_,
+        officer_v0_.emp_name as emp_nam12_26_,
+        officer_v0_.lost_login as lost_lo13_26_,
+        officer_v0_.ps_cd as ps_cd14_26_,
+        officer_v0_.ps_name as ps_name15_26_,
+        officer_v0_.pwd as pwd16_26_,
+        officer_v0_.role_cd as role_cd17_26_,
+        officer_v0_.state_cd as state_c18_26_,
+        officer_v0_.state_name as state_n19_26_,
+        officer_v0_.unit_name as unit_na20_26_,
+        officer_v0_.unit_cd as unit_cd21_26_,
+        officer_v0_.login_id as login_i22_26_ 
+    from
+        officer_v officer_v0_ 
+    where
+        officer_v0_.login_id=?
+2018-10-15 11:52:35.896 DEBUG 27820 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        challantyp0_.challan_type as challan_1_3_0_,
+        challantyp0_.challan_desc as challan_2_3_0_,
+        challantyp0_.challan_sf as challan_3_3_0_ 
+    from
+        ma_challan_type challantyp0_ 
+    where
+        challantyp0_.challan_type=?
+2018-10-15 11:52:35.898 DEBUG 27820 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    {call p_seq_test(?)}
+2018-10-15 11:52:36.061 DEBUG 27820 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        challannum0_.challan_type as challan_1_27_,
+        challannum0_.challan_sf as challan_2_27_,
+        challannum0_.seq_no as seq_no3_27_ 
+    from
+        seq_challan challannum0_ 
+    where
+        challannum0_.challan_type=?
+2018-10-15 11:52:36.064  INFO 27820 --- [http-nio-8080-exec-5] c.e.c.EchallanGenerationService          : ChallanNumberSequence *****:3
+2018-10-15 11:52:36.066 DEBUG 27820 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    insert 
+    into
+        t_eticket
+        (fine_amt, tfine_amt, uch_amt, amt_collect_by_login_id, booked_ps_cd, cadre_cd, challan_base, challan_no, challan_type, created_dt, date_of_pay, dept_cd, detain_no_of_items, gps_lat, gps_long, gtwy_cd, image, login_id, offence_dt, paid_amt, payment_status, point_cd, ps_juris_cd, reduction_amt, regn_no, remark_cd, responsible_ps_cd, state_cd, transaction_id, unit_cd, eticket_no) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2018-10-15 11:52:36.071  WARN 27820 --- [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2018-10-15 11:52:36.071 ERROR 27820 --- [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry '3' for key 'PRIMARY'
+2018-10-15 11:52:36.083 ERROR 27820 --- [http-nio-8080-exec-5] c.e.c.EchallanGenerationService          : Challan Generation failed . reason
+
+javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:149) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:157) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:164) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:814) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:774) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener$1.cascade(JpaPersistEventListener.java:80) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:467) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:392) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:193) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeCollectionElements(Cascade.java:500) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeCollection(Cascade.java:432) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:395) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:193) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:126) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeAfterSave(AbstractSaveEventListener.java:445) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:281) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:182) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:125) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:783) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:768) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:350) ~[spring-orm-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at com.sun.proxy.$Proxy117.persist(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:305) ~[spring-orm-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at com.sun.proxy.$Proxy117.persist(Unknown Source) ~[na:na]
+	at com.echallan.challanGeneration.EchallanGenerationService.generateEchallan(EchallanGenerationService.java:791) ~[classes/:na]
+	at com.echallan.challanGeneration.EchallanGenerationService$$FastClassBySpringCGLIB$$cadba0af.invoke(<generated>) [classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) [spring-core-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746) [spring-aop-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) [spring-aop-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at com.echallan.challanGeneration.EchallanGenerationService$$EnhancerBySpringCGLIB$$dfe477b8.generateEchallan(<generated>) ~[classes/:na]
+	at com.echallan.challanGeneration.EchallanGenerationController.generateEchallan(EchallanGenerationController.java:31) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.base/java.lang.Thread.run(Thread.java:844) ~[na:na]
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:59) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:111) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:97) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:178) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3032) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3547) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:89) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:600) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeInserts(ActionQueue.java:457) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:258) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:318) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:275) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:182) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:113) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:807) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	... 107 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '3' for key 'PRIMARY'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488) ~[na:na]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:936) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998) ~[mysql-connector-java-5.1.46.jar:5.1.46]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-2.7.9.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-2.7.9.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:175) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	... 122 common frames omitted
+
+2018-10-15 11:52:36.088 ERROR 27820 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: Transaction was marked for rollback only; cannot commit; nested exception is org.hibernate.TransactionException: Transaction was marked for rollback only; cannot commit] with root cause
+
+org.hibernate.TransactionException: Transaction was marked for rollback only; cannot commit
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:228) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:68) ~[hibernate-core-5.2.17.Final.jar:5.2.17.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:536) ~[spring-orm-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:746) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:714) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:532) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:304) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) ~[spring-tx-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at com.echallan.challanGeneration.EchallanGenerationService$$EnhancerBySpringCGLIB$$dfe477b8.generateEchallan(<generated>) ~[classes/:na]
+	at com.echallan.challanGeneration.EchallanGenerationController.generateEchallan(EchallanGenerationController.java:31) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:155) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:123) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) ~[spring-boot-actuator-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.8.RELEASE.jar:5.0.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167) [na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641) [na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.base/java.lang.Thread.run(Thread.java:844) [na:na]
+
+2018-10-15 11:55:02.337  INFO 27820 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-15 11:55:02.341  INFO 27820 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-15 11:56:14.419  INFO 26988 --- [restartedMain] c.e.TsEchallanServicesApplication        : Starting TsEchallanServicesApplication on Madhu with PID 26988 (G:\OxygenWorkSpace2\TSEchallanServices\target\classes started by Madhusudhan in G:\OxygenWorkSpace2\TSEchallanServices)
+2018-10-15 11:56:14.421  INFO 26988 --- [restartedMain] c.e.TsEchallanServicesApplication        : No active profile set, falling back to default profiles: default
+2018-10-15 11:56:16.221  INFO 26988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-15 11:56:16.222  INFO 26988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-10-15 11:56:16.226  INFO 26988 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-9.0.4\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\app\Madhusudhan\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Apache24\bin;C:\Apache24;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk-9.0.4\bin;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Madhusudhan\AppData\Local\Microsoft\WindowsApps;C:\Users\Madhusudhan\AppData\Roaming\npm;;.]
+2018-10-15 11:56:16.315  INFO 26988 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-15 11:56:16.945  INFO 26988 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-15 11:56:17.086  INFO 26988 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-15 11:56:17.130  INFO 26988 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-15 11:56:17.177  INFO 26988 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-10-15 11:56:17.179  INFO 26988 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-10-15 11:56:17.213  INFO 26988 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-10-15 11:56:17.324  INFO 26988 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018-10-15 11:56:20.123  INFO 26988 --- [restartedMain] c.e.TsEchallanServicesApplication        : Started TsEchallanServicesApplication in 5.943 seconds (JVM running for 6.654)
+2018-10-15 11:57:37.449  INFO 26988 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-15 11:57:37.571  INFO 26988 --- [http-nio-8080-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-10-15 11:57:37.629 DEBUG 26988 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        officer_v0_.emp_id as emp_id1_26_,
+        officer_v0_.division_cd as division2_26_,
+        officer_v0_.division_name as division3_26_,
+        officer_v0_.zone_cd as zone_cd4_26_,
+        officer_v0_.zone_name as zone_nam5_26_,
+        officer_v0_.actvie_status as actvie_s6_26_,
+        officer_v0_.cadre_cd as cadre_cd7_26_,
+        officer_v0_.cadre_sf as cadre_sf8_26_,
+        officer_v0_.contact_no as contact_9_26_,
+        officer_v0_.duties as duties10_26_,
+        officer_v0_.email_id as email_i11_26_,
+        officer_v0_.emp_name as emp_nam12_26_,
+        officer_v0_.lost_login as lost_lo13_26_,
+        officer_v0_.ps_cd as ps_cd14_26_,
+        officer_v0_.ps_name as ps_name15_26_,
+        officer_v0_.pwd as pwd16_26_,
+        officer_v0_.role_cd as role_cd17_26_,
+        officer_v0_.state_cd as state_c18_26_,
+        officer_v0_.state_name as state_n19_26_,
+        officer_v0_.unit_name as unit_na20_26_,
+        officer_v0_.unit_cd as unit_cd21_26_,
+        officer_v0_.login_id as login_i22_26_ 
+    from
+        officer_v officer_v0_ 
+    where
+        officer_v0_.login_id=?
+2018-10-15 11:57:37.771 DEBUG 26988 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        challantyp0_.challan_type as challan_1_3_0_,
+        challantyp0_.challan_desc as challan_2_3_0_,
+        challantyp0_.challan_sf as challan_3_3_0_ 
+    from
+        ma_challan_type challantyp0_ 
+    where
+        challantyp0_.challan_type=?
+2018-10-15 11:57:37.827 DEBUG 26988 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    {call p_seq_test(?)}
+2018-10-15 11:57:38.030 DEBUG 26988 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        challannum0_.challan_type as challan_1_27_,
+        challannum0_.challan_sf as challan_2_27_,
+        challannum0_.seq_no as seq_no3_27_ 
+    from
+        seq_challan challannum0_ 
+    where
+        challannum0_.challan_type=?
+2018-10-15 11:57:38.033  INFO 26988 --- [http-nio-8080-exec-3] c.e.c.EchallanGenerationService          : ChallanNumberSequence *****:4
+2018-10-15 11:57:38.056 DEBUG 26988 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    insert 
+    into
+        t_eticket
+        (fine_amt, tfine_amt, uch_amt, amt_collect_by_login_id, booked_ps_cd, cadre_cd, challan_base, challan_no, challan_type, created_dt, date_of_pay, dept_cd, detain_no_of_items, gps_lat, gps_long, gtwy_cd, image, login_id, offence_dt, paid_amt, payment_status, point_cd, ps_juris_cd, reduction_amt, regn_no, remark_cd, responsible_ps_cd, state_cd, transaction_id, unit_cd, eticket_no) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2018-10-15 11:57:38.166 DEBUG 26988 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    insert 
+    into
+        t_chargesheet_info
+        (bac_level, cs_issue_dt, cs_status, eticket_no) 
+    values
+        (?, ?, ?, ?)
+2018-10-15 11:57:38.195 DEBUG 26988 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    insert 
+    into
+        t_violations
+        (afine_amt, created_dt, eticket_no, offence_cd) 
+    values
+        (?, ?, ?, ?)
+2018-10-15 11:57:38.230 DEBUG 26988 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    insert 
+    into
+        t_violations
+        (afine_amt, created_dt, eticket_no, offence_cd) 
+    values
+        (?, ?, ?, ?)
+2018-10-15 11:57:38.240  INFO 26988 --- [http-nio-8080-exec-3] c.e.c.EchallanGenerationService          : [method:getPrintBuffer] [regnNO:AP10AQ4947]
+2018-10-15 11:57:38.241 DEBUG 26988 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        rcentity0_.regn_no as regn_no1_20_0_,
+        rcentity0_.aadhar_no as aadhar_n2_20_0_,
+        rcentity0_.address as address3_20_0_,
+        rcentity0_.bdy_type as bdy_type4_20_0_,
+        rcentity0_.chas_no as chas_no5_20_0_,
+        rcentity0_.city as city6_20_0_,
+        rcentity0_.colour as colour7_20_0_,
+        rcentity0_.contact_no as contact_8_20_0_,
+        rcentity0_.created_dt as created_9_20_0_,
+        rcentity0_.cylinder as cylinde10_20_0_,
+        rcentity0_.district as distric11_20_0_,
+        rcentity0_.district_cd as distric12_20_0_,
+        rcentity0_.dob as dob13_20_0_,
+        rcentity0_.email_id as email_i14_20_0_,
+        rcentity0_.eng_no as eng_no15_20_0_,
+        rcentity0_.f_name as f_name16_20_0_,
+        rcentity0_.fc_no as fc_no17_20_0_,
+        rcentity0_.fc_validity as fc_vali18_20_0_,
+        rcentity0_.fuel as fuel19_20_0_,
+        rcentity0_.hp as hp20_20_0_,
+        rcentity0_.insurance_no as insuran21_20_0_,
+        rcentity0_.insurance_validity as insuran22_20_0_,
+        rcentity0_.iss_dt as iss_dt23_20_0_,
+        rcentity0_.iss_pls as iss_pls24_20_0_,
+        rcentity0_.mandal as mandal25_20_0_,
+        rcentity0_.mkr_clas as mkr_cla26_20_0_,
+        rcentity0_.mkr_name as mkr_nam27_20_0_,
+        rcentity0_.o_name as o_name28_20_0_,
+        rcentity0_.o_status as o_statu29_20_0_,
+        rcentity0_.off_cd as off_cd30_20_0_,
+        rcentity0_.ownfr_dt as ownfr_d31_20_0_,
+        rcentity0_.ownto_dt as ownto_d32_20_0_,
+        rcentity0_.pan_no as pan_no33_20_0_,
+        rcentity0_.permit_no as permit_34_20_0_,
+        rcentity0_.permit_validity as permit_35_20_0_,
+        rcentity0_.pin_code as pin_cod36_20_0_,
+        rcentity0_.rvc_vcl_id as rvc_vcl37_20_0_,
+        rcentity0_.rvd_cc as rvd_cc38_20_0_,
+        rcentity0_.seat_capacity as seat_ca39_20_0_,
+        rcentity0_.state_cd as state_c40_20_0_,
+        rcentity0_.tax_validity as tax_val41_20_0_,
+        rcentity0_.valid_upto as valid_u42_20_0_,
+        rcentity0_.vclass_id as vclass_43_20_0_,
+        rcentity0_.veh_class as veh_cla44_20_0_,
+        rcentity0_.veh_type as veh_typ45_20_0_ 
+    from
+        ma_rta_regn rcentity0_ 
+    where
+        rcentity0_.regn_no=?
+2018-10-15 11:57:38.264 DEBUG 26988 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        dlentity0_.ldc_dl_no as ldc_dl_n1_19_,
+        dlentity0_.created_dt as created_2_19_,
+        dlentity0_.ldc_dob as ldc_dob3_19_,
+        dlentity0_.ldc_appr_cd as ldc_appr4_19_,
+        dlentity0_.ldc_bdg_dt as ldc_bdg_5_19_,
+        dlentity0_.ldc_bdg_lno as ldc_bdg_6_19_,
+        dlentity0_.ldc_bdg_no as ldc_bdg_7_19_,
+        dlentity0_.ldc_bdg_plc as ldc_bdg_8_19_,
+        dlentity0_.ldc_bld_grp as ldc_bld_9_19_,
+        dlentity0_.ldc_bvld_to as ldc_bvl10_19_,
+        dlentity0_.ldc_coa_no as ldc_coa11_19_,
+        dlentity0_.ldc_dl_sno as ldc_dl_12_19_,
+        dlentity0_.ldc_dl_typ as ldc_dl_13_19_,
+        dlentity0_.ldc_dl_yr as ldc_dl_14_19_,
+        dlentity0_.ldc_edr_no as ldc_edr15_19_,
+        dlentity0_.ldc_elec_no as ldc_ele16_19_,
+        dlentity0_.ldc_entry_datetime as ldc_ent17_19_,
+        dlentity0_.ldc_entry_fg as ldc_ent18_19_,
+        dlentity0_.ldc_fac_no as ldc_fac19_19_,
+        dlentity0_.ldc_f_nm as ldc_f_n20_19_,
+        dlentity0_.ldc_hcp_det as ldc_hcp21_19_,
+        dlentity0_.ldc_ht as ldc_ht22_19_,
+        dlentity0_.ldc_hvld_to as ldc_hvl23_19_,
+        dlentity0_.ldc_id1 as ldc_id24_19_,
+        dlentity0_.ldc_id2 as ldc_id25_19_,
+        dlentity0_.ldc_iss_dt as ldc_iss26_19_,
+        dlentity0_.ldc_lic_own as ldc_lic27_19_,
+        dlentity0_.ldc_lic_st as ldc_lic28_19_,
+        dlentity0_.ldc_l_nm as ldc_l_n29_19_,
+        dlentity0_.ldc_mov_to as ldc_mov30_19_,
+        dlentity0_.ldc_m_nm as ldc_m_n31_19_,
+        dlentity0_.ldc_off_cd as ldc_off32_19_,
+        dlentity0_.ldc_of_nm as ldc_of_33_19_,
+        dlentity0_.ldc_ol_nm as ldc_ol_34_19_,
+        dlentity0_.ldc_paddr1 as ldc_pad35_19_,
+        dlentity0_.ldc_paddr2 as ldc_pad36_19_,
+        dlentity0_.ldc_paddr3 as ldc_pad37_19_,
+        dlentity0_.ldc_pan_no as ldc_pan38_19_,
+        dlentity0_.ldc_pcity as ldc_pci39_19_,
+        dlentity0_.ldc_pg_nm as ldc_pg_40_19_,
+        dlentity0_.ldc_pg_typ as ldc_pg_41_19_,
+        dlentity0_.ldc_phgrph as ldc_phg42_19_,
+        dlentity0_.ldc_pphno as ldc_pph43_19_,
+        dlentity0_.ldc_ppincd as ldc_ppi44_19_,
+        dlentity0_.ldc_pstate as ldc_pst45_19_,
+        dlentity0_.ldc_qual as ldc_qua46_19_,
+        dlentity0_.ldc_sex as ldc_sex47_19_,
+        dlentity0_.ldc_taddr1 as ldc_tad48_19_,
+        dlentity0_.ldc_taddr2 as ldc_tad49_19_,
+        dlentity0_.ldc_taddr3 as ldc_tad50_19_,
+        dlentity0_.ldc_tcity as ldc_tci51_19_,
+        dlentity0_.ldc_tphno as ldc_tph52_19_,
+        dlentity0_.ldc_tpincd as ldc_tpi53_19_,
+        dlentity0_.ldc_tstate as ldc_tst54_19_,
+        dlentity0_.ldc_visa_vld as ldc_vis55_19_,
+        dlentity0_.ldc_vld_to as ldc_vld56_19_,
+        dlentity0_.mwallet_contact_no as mwallet57_19_,
+        dlentity0_.new_hazardous_valid_upto as new_haz58_19_,
+        dlentity0_.new_nontransport_cov as new_non59_19_,
+        dlentity0_.new_non_transport_validto as new_non60_19_,
+        dlentity0_.new_slno as new_sln61_19_,
+        dlentity0_.new_suspension_from as new_sus62_19_,
+        dlentity0_.new_suspension_to as new_sus63_19_,
+        dlentity0_.new_transport_cov as new_tra64_19_,
+        dlentity0_.oldnewflag as oldnewf65_19_,
+        dlentity0_.rta_mwallet_regn_dt as rta_mwa66_19_,
+        dlentity0_.term as term67_19_,
+        dlentity0_.traffic_points as traffic68_19_,
+        dlentity0_.updated_dt as updated69_19_,
+        dlentity0_.webservice_import as webserv70_19_,
+        dlentity0_.webservice_updatetime as webserv71_19_ 
+    from
+        ma_rta_dl dlentity0_ 
+    where
+        dlentity0_.ldc_dl_no=? 
+        and dlentity0_.ldc_dob=?
+2018-10-15 11:57:38.271  INFO 26988 --- [http-nio-8080-exec-3] c.e.c.EchallanGenerationService          : challan generation response code::1 desc:SUCCESS remarks:TELANGANA STATE POLICE 
+   TRAFFIC POLICE  
+  SPOT CHALLAN SYSTEM        
+  CHALLANS&RECEIPT FOR COMPOUNDING OFFENCE  
+  UNDER THE COURT OF LAW,MOTOR VEHICLE ACT  
+   	 /RULES(TRAFFIC VIOLATIONS)           
+ 	 TAB DRUNKEN DRIVE CHALLAN RECEIPT           
+  ----------------------------------------  
+  OFFENCE DATE          :Mon Oct 15 00:00:00 IST 2018 
+ E-TICKET NO           :HYD0020184 
+ REGN_NO               :AP10AQ4947 
+ CHALLAN TYPE          :TAB Drunken Drive 
+ PS NAME               :2300 
+ LOCATION NAME         :230001 
+ ----------------------------------------  
+  ----------------------------------------  
+ 			 VEHICLE DETAILS                  
+        
+ Vehicle Number:AP10AQ4947 
+Owner Name    :SRINIVAS MAMIDLA 
+Address       :1-11-293/27/1,BHAGAVANTHAPUR,BEGUMPET HYDERABAD 
+City          :HYDERABAD 
+Maker Name    :BAJAJ AUTO LTD 
+Maker Class   :BAJAJ PULSAR 150 D.T.S.I. 
+Color:EBONY BLACK 
+Contact No    :9949012021 
+Vehicle Type  :null 
+----------------------------------------   
+ 			 DRIVER DETAILS 
+ DRIVER NAME   : 
+DRIVER F NAME : 
+DRIVER AGE    : 
+CONTACT NO    : 
+----------------------------------------   
+  I'M ACCEPTING THE ABOVE VIOLATION UNDER      
+    THE FOLLOWING OFFENCES   
+  S 185 , S 130/177          
+  VIOLATIONS             AMOUNT                
+ 1. W/O HELMET(178)100 
+2. CELL PHONE DRIVING(178)1000 
+          
+  IS IT SPOT PAYMENT     :NO 
+  PAYMENT CAN BE MADE AT GIVEN COURT           
+  ----------------------------------------     
+  			 DETAINED ITEMS                  
+           
+   ---------------------------------------     
+           
+  DRIVER SIGN			OFFICER'S SIGN           
+ 					RANJITH 
+ 					DGP         
+ 					Hyderabad 
+ 					9848218870 
+  ----------------------------------------     
+  	 PENDING CHALLANS ON AP10AQ4947 
+           
+  NO OF PENDING ECHALLANS :2 
+  TOTAL PENDING AMOUNT    :270                 
+  PAYMENT CAN BE MADE AT ANY CENTER            
+  APONLINE/ESEVA/COMPOUNDING BOOTH/            
+  ANDROID APP/NETBANKING(WWW.ECHALLAN.ORG)     
+  HELPLINE NO :040 27853416                    
+                                               
+  Please attend the counselling at TTI         
+  center LB NAGAR TTI with your's              
+  and your Parent's/Gaurdian's/Spouse's        
+  AADHAAR card copy on This Friday/Saturday    
+  between 10AM to 3PM.                         
+  ----------------------------------------     
+ 
+2018-10-15 11:57:38.313  INFO 26988 --- [http-nio-8080-exec-3] c.e.c.EchallanGenerationController       : [method:generateEchallan] response :com.echallan.response.CommonResponse@5336cdc9
+2018-10-15 11:58:34.752  INFO 26988 --- [http-nio-8080-exec-2] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in the request target. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:479) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:684) ~[tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:800) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1471) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167) [na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641) [na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.32.jar:8.5.32]
+	at java.base/java.lang.Thread.run(Thread.java:844) [na:na]
+
+2018-10-15 12:03:00.439  INFO 26988 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-15 12:03:00.442  INFO 26988 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-15 12:04:33.609  INFO 23228 --- [main] c.e.TsEchallanServicesApplicationTests   : Starting TsEchallanServicesApplicationTests on Madhu with PID 23228 (started by Madhusudhan in G:\OxygenWorkSpace2\TSEchallanServices)
+2018-10-15 12:04:33.612  INFO 23228 --- [main] c.e.TsEchallanServicesApplicationTests   : No active profile set, falling back to default profiles: default
+2018-10-15 12:04:36.069  INFO 23228 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-15 12:04:36.378  INFO 23228 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-15 12:04:36.461  INFO 23228 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-15 12:04:36.575  INFO 23228 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-10-15 12:04:36.576  INFO 23228 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-10-15 12:04:36.624  INFO 23228 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-10-15 12:04:36.768  INFO 23228 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018-10-15 12:04:40.689  INFO 23228 --- [main] c.e.TsEchallanServicesApplicationTests   : Started TsEchallanServicesApplicationTests in 7.649 seconds (JVM running for 8.784)
+2018-10-15 12:04:41.040  INFO 23228 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-15 12:04:41.046  INFO 23228 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
