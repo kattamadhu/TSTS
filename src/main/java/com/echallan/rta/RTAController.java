@@ -17,7 +17,7 @@ private static final Logger logger = LoggerFactory.getLogger(RTAController.class
 @Autowired
 private RTAService rtaService;
 
-@GetMapping("/rta/rc")
+@GetMapping("/echallan/rta/rc")
 public RCEntity getRCDetails(@RequestParam("regnNo") String regnNo) {
 	logger.info("getRC method called for regnno regnNo:"+regnNo);
 	RCEntity response= rtaService.getRCDetails(regnNo);
@@ -26,7 +26,7 @@ public RCEntity getRCDetails(@RequestParam("regnNo") String regnNo) {
 	
 }
 
-@GetMapping("/rta/dl")
+@GetMapping("/echallan/rta/dl")
 public DLEntity getDLDetails(@RequestParam("dlNo") String dlNo) {
 	logger.info("[getDLDetails: method] called for dlNo:"+dlNo);
 	DLEntity response= rtaService.getDLDetails(dlNo);
@@ -34,7 +34,7 @@ public DLEntity getDLDetails(@RequestParam("dlNo") String dlNo) {
 	return response;
 
 }
-	@GetMapping("/rta/dlNDob")
+	@GetMapping("/echallan/rta/dlNDob")
 	public DLEntity getDLDOBDetails(@RequestParam("dlNo") String dlNo,@RequestParam("dlDOB") String dlDOB) {
 		logger.info("[getDLDOBDetails: method] called for dlNo:"+dlNo+ " dlDOB:"+dlDOB);
 		DLEntity response= rtaService.getDLDOBDetails(dlNo,dlDOB);
