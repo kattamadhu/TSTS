@@ -34,6 +34,8 @@ public DLEntity getDLDetails(@RequestParam("dlNo") String dlNo) {
 	return response;
 
 }
+
+
 	@GetMapping("/echallan/rta/dlNDob")
 	public DLEntity getDLDOBDetails(@RequestParam("dlNo") String dlNo,@RequestParam("dlDOB") String dlDOB) {
 		logger.info("[getDLDOBDetails: method] called for dlNo:"+dlNo+ " dlDOB:"+dlDOB);
