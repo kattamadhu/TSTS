@@ -1,5 +1,10 @@
 package com.echallan.exception;
 
+/**
+ * 
+ * @author Madhusudhan
+ *
+ */
 public class FileStorageException extends RuntimeException {
     /**
 	 * 

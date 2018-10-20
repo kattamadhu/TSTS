@@ -787,18 +787,25 @@ public class EchallanGenerationService {
 			}else {// ***  CONTACT ENFORCEMENT COMMIT START **********
 				
 				
+					try {
+						entityManager.persist(eticket);
+						entityManager.flush();
+						
+						String sb=getPrintBuffer(reqObj.getUnitName() ,eticket,
+								challanTypeEntity.getChallan_desc(),reqObj.getPaymentStatus(),
+								drivingLicenceNo,driverDob,violationBuffer.toString(),
+								detainedItemsBuffer.toString(),officerDetails);
+						
+						response.setRespCode(1);
+						response.setRespDesc("SUCCESS");
+						response.setRespRemark(sb);
+					} catch (Exception e) {
+						response.setRespCode(0);
+						response.setRespDesc("FAILED");
+						response.setRespRemark("Challan Generation failure due to "+e);
+						logger.info("[Error:PersistenceException]", e);
+					}
 					
-					entityManager.persist(eticket);
-					entityManager.flush();
-					
-					String sb=getPrintBuffer(reqObj.getUnitName() ,eticket,
-							challanTypeEntity.getChallan_desc(),reqObj.getPaymentStatus(),
-							drivingLicenceNo,driverDob,violationBuffer.toString(),
-							detainedItemsBuffer.toString(),officerDetails);
-					
-					response.setRespCode(1);
-					response.setRespDesc("SUCCESS");
-					response.setRespRemark(sb);
 					
 				
 				
